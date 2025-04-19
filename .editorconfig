@@ -1,0 +1,15 @@
+# 顶级配置
+root = true
+
+# 对所有文件生效
+[*]
+# 设置缩进样式为空格（而不是制表符）
+indent_style = space
+# 设置缩进大小为 2 个空格
+indent_size = 2
+# Tab 键的宽度等效于 2 个空格
+tab_width = 2
+# 换行符使用 LF（Unix 风格）
+end_of_line = lf
+# 文件末尾添加空行
+insert_final_newline = true
