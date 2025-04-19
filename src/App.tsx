@@ -22,7 +22,7 @@ const App: React.FC = () => {
 
   // 初次加载定位
   useEffect(() => {
-    onLocate();
+    toLocate();
   }, []);
 
   // 根据经纬度获取天气信息
@@ -36,9 +36,7 @@ const App: React.FC = () => {
       })
   }, [loc])
 
-  const onLocate = () => {
-    const state = getState();
-    if(state === 'loading') return;
+  const toLocate = () => {
     setState('loading')
     getCurrentPosition()
     .catch(() => {
@@ -59,6 +57,11 @@ const App: React.FC = () => {
       return loc
     })
     // .catch TODO 异常处理
+  }
+  const onLocate = () => {
+    const state = getState();
+    if(state === 'loading') return;
+    toLocate();
   }
   return (
     <div className="app">

@@ -1,8 +1,12 @@
 # project init
 - cli create  npm create vite@latest react_weather -- --template react-ts
 
+
 # 技术栈
 - react react-redux typescript
+
+# 预览
+- [https://guojingwen.github.io/react_weather/](https://guojingwen.github.io/react_weather/)
 
 # Weather API
 - [query weather](https://openweathermap.org/)  register  and  get API_KEY
